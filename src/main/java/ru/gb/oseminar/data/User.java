@@ -1,8 +1,8 @@
 package ru.gb.oseminar.data;
 
 import java.time.LocalDate;
-
-public class User {
+// Принцип LSP сделали базовый класс абстрактным закрытым для модификации
+public abstract class User {
     private String firstName;
     private String secondName;
     private String patronymic;

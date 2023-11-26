@@ -9,7 +9,8 @@ import ru.gb.oseminar.view.UserView;
 
 import java.time.LocalDate;
 import java.util.List;
-
+// Принцип DIP уже организован. UserController обращается напрямую к DataService и UserView
+// а эти два класса между не обращаются к друг другу напрямую
 public class UserController {
 
     private final DataService dataService = new DataService();
